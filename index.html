@@ -5,25 +5,26 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="main.css">
+   <script src="https://kit.fontawesome.com/5df3188904.js"></script>
    <title>Task List</title>
 </head>
 
 <body>
-   <!-- Task Form -->
-   <div class="form-container">
-      <form class="task-form">
-         <label for="task">Task</label>
-         <input type="text" name="task" required>
-         <input type="submit" value="add task">
-      </form>
+   <div class="container">
+      <h1 class="title">Task List</h1>
+      <!-- Show tasks -->
+      <div class="tasks-container">
+         <ul class="tasks-list"></ul>
+      </div>
+      <!-- Task Form -->
+      <div class="form-container">
+         <form>
+            <input class="form-control mt-2" type="text" name="task" required>
+            <button class="btn btn-dark mt-2" type="submit">add task</button>
+         </form>
+      </div>
    </div>
-
-   <!-- Show tasks -->
-   <div class="tasks-container">
-      <button type="submit" class="show-button">Show Tasks!</button>
-      <div class="show-tasks"></div>
-   </div>
-
    <!-- Scripts -->
    <script src="app.js"></script>
 </body>
